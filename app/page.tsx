@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   ArrowUpRight,
@@ -176,7 +175,7 @@ export default function HomePage() {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="/resume.pdf"
+                  href="./resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-2xl bg-[var(--ink)] px-5 py-3 text-sm font-medium text-white"
@@ -207,13 +206,10 @@ export default function HomePage() {
 
             <Block className="p-6 md:p-8">
               <div className="overflow-hidden rounded-2xl border border-[var(--edge)]">
-                <Image
-                  src="/prathap_linkedin_photo.png"
+                <img
+                  src="./prathap_linkedin_photo.png"
                   alt="Prathap Boddu"
-                  width={1200}
-                  height={900}
                   className="h-64 w-full object-cover object-top"
-                  priority
                 />
               </div>
               <div className="mt-6 grid grid-cols-2 gap-3">
@@ -373,7 +369,7 @@ export default function HomePage() {
                   Email
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href="./resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-2xl border border-white/25 px-5 py-3 text-sm font-medium text-white"
