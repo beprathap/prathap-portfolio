@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Github,
   Linkedin,
@@ -170,18 +171,18 @@ export default function HomePage() {
               <div>
                 <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm">
                   <ShieldCheck className="h-4 w-4" />
-                  Building secure, scalable, AI-ready data platforms
+                  Building reliable data platforms for real business outcomes
                 </div>
                 <h1 className="mt-6 text-5xl md:text-7xl font-semibold tracking-tight leading-[0.95]">
-                  Data Engineer focused on
+                  Hi, I'm Prathap.
                   <span className="block text-slate-500">
-                    Snowflake, AWS, and production-grade pipelines.
+                    I build scalable pipelines on Snowflake and AWS.
                   </span>
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg md:text-xl leading-8 text-slate-600">
-                  I design cloud-native data systems across healthcare, automotive,
-                  and analytics use cases — with hands-on experience in CDC pipelines,
-                  Medallion architecture, API integrations, and high-scale warehouse workloads.
+                  I'm a data engineer with 4+ years of experience across healthcare and automotive
+                  platforms. I focus on secure ingestion, CDC pipelines, data quality, and
+                  performance tuning that helps teams trust their data.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
@@ -192,7 +193,7 @@ export default function HomePage() {
                     className="inline-flex items-center gap-2 rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm hover:opacity-90"
                   >
                     <Github className="h-4 w-4" />
-                    View GitHub
+                    GitHub
                   </a>
                   <a
                     href="https://www.linkedin.com/in/prathapboddu/"
@@ -204,11 +205,13 @@ export default function HomePage() {
                     LinkedIn
                   </a>
                   <a
-                    href="mailto:prathapboddu0121@gmail.com"
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-800 hover:bg-slate-50"
                   >
-                    <Mail className="h-4 w-4" />
-                    Contact Me
+                    <FileText className="h-4 w-4" />
+                    Resume
                   </a>
                 </div>
 
@@ -225,14 +228,24 @@ export default function HomePage() {
               </div>
 
               <Card className="p-6 md:p-8">
+                <div className="mb-6 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                  <Image
+                    src="/prathap_linkedin_photo.png"
+                    alt="Prathap Boddu"
+                    width={1200}
+                    height={900}
+                    className="h-64 w-full object-cover object-top"
+                    priority
+                  />
+                </div>
                 <div className="flex items-center gap-3">
                   <div className="rounded-2xl bg-slate-100 p-3">
                     <Database className="h-6 w-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-500">Currently focused on</p>
+                    <p className="text-sm text-slate-500">Current focus</p>
                     <p className="font-semibold">
-                      Enterprise data platforms and cloud-native data engineering
+                      High-throughput pipelines, governance, and cost-efficient modeling
                     </p>
                   </div>
                 </div>
@@ -249,11 +262,10 @@ export default function HomePage() {
                 </div>
 
                 <div className="mt-8 rounded-2xl border border-slate-200 p-5">
-                  <p className="text-sm text-slate-500">Core positioning</p>
+                  <p className="text-sm text-slate-500">What I deliver</p>
                   <p className="mt-2 text-base leading-7 text-slate-700">
-                    Data Engineer with experience delivering secure, scalable pipelines
-                    using Snowflake, AWS, Python, DBT, and PySpark — with growing emphasis
-                    on AI-ready data infrastructure.
+                    Production-ready data systems using Snowflake, AWS, Python, DBT, and PySpark
+                    with strong ownership of reliability, testing, and observability.
                   </p>
                 </div>
               </Card>
@@ -265,8 +277,8 @@ export default function HomePage() {
           <div className={sectionClass}>
             <SectionTitle
               eyebrow="About"
-              title="A portfolio designed around your actual strengths"
-              description="This site is intentionally shaped around your resume and GitHub profile: cloud-native ingestion, domain-rich data platforms, and strong hands-on Python and SQL delivery."
+              title="What I bring as a data engineer"
+              description="I work across ingestion, transformation, and consumption layers with an emphasis on scale, security, and maintainability."
             />
             <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-6">
               <Card className="p-7">
@@ -275,16 +287,16 @@ export default function HomePage() {
                     <Cloud className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold">What makes you stand out</h3>
+                    <h3 className="text-xl font-semibold">Technical strengths</h3>
                     <p className="mt-3 text-slate-600 leading-7">
-                      You are not just building dashboards or small scripts. Your profile shows
-                      enterprise-scale ingestion, secure vendor integrations, CDC/SCD logic,
-                      operational reliability, and measurable business impact.
+                      My work is centered on enterprise-scale ingestion and transformation.
+                      I design data flows that are fast, auditable, and resilient across
+                      batch and near-real-time workloads.
                     </p>
                     <ul className="mt-5 space-y-3 text-slate-600">
-                      <li>• Enterprise data platforms across multiple domains</li>
-                      <li>• Strong balance of architecture thinking and hands-on implementation</li>
-                      <li>• Clear focus on Snowflake, AWS, Python, PySpark, DBT, and production operations</li>
+                      <li>• Snowflake + AWS platform engineering across multiple domains</li>
+                      <li>• Strong hands-on delivery in Python, SQL, PySpark, and DBT</li>
+                      <li>• Practical ownership of performance, cost, and reliability</li>
                     </ul>
                   </div>
                 </div>
@@ -295,16 +307,16 @@ export default function HomePage() {
                     <Code2 className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold">How this site helps your career</h3>
+                    <h3 className="text-xl font-semibold">How I work</h3>
                     <p className="mt-3 text-slate-600 leading-7">
-                      This portfolio is built to support recruiter screening, hiring manager review,
-                      and personal branding. It gives you one clean place to present experience,
-                      impact metrics, certifications, GitHub projects, and future technical writing.
+                      I prefer clear requirements, measurable outcomes, and shipping in small,
+                      reliable increments. I care about code quality, data correctness, and
+                      documentation that helps teams move faster.
                     </p>
                     <ul className="mt-5 space-y-3 text-slate-600">
-                      <li>• Better than just sending a resume PDF</li>
-                      <li>• Makes your GitHub easier to understand in business terms</li>
-                      <li>• Easy to host free on Vercel</li>
+                      <li>• Translate business goals into practical data architecture</li>
+                      <li>• Build with testing, observability, and operational clarity</li>
+                      <li>• Partner closely with analytics, product, and platform teams</li>
                     </ul>
                   </div>
                 </div>
@@ -317,8 +329,8 @@ export default function HomePage() {
           <div className={sectionClass}>
             <SectionTitle
               eyebrow="Experience"
-              title="Professional experience with measurable impact"
-              description="A concise presentation of your background, written for recruiters and engineering leaders who want both technical depth and business outcomes."
+              title="Experience and outcomes"
+              description="Projects and responsibilities where I improved reliability, reduced latency, and supported critical production workloads."
             />
             <div className="space-y-6">
               {experience.map((item, idx) => (
@@ -360,8 +372,8 @@ export default function HomePage() {
           <div className={sectionClass}>
             <SectionTitle
               eyebrow="Projects"
-              title="Featured work connected to your GitHub"
-              description="These projects make your profile more concrete by turning repos into clear stories around pipelines, analytics, and machine learning without exposing employer details."
+              title="Selected projects"
+              description="Hands-on projects that reflect how I approach data engineering, analytics engineering, and applied machine learning."
             />
             <div className="grid md:grid-cols-2 gap-6">
               {projects.map((project, idx) => (
@@ -400,8 +412,8 @@ export default function HomePage() {
           <div className={sectionClass}>
             <SectionTitle
               eyebrow="Certifications"
-              title="Credentials that reinforce your positioning"
-              description="Your certifications support a strong narrative around data architecture, cloud platforms, and modern engineering fundamentals."
+              title="Certifications"
+              description="Credentials across cloud platforms, data architecture, and modern engineering foundations."
             />
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {certifications.map((cert) => (
@@ -426,27 +438,35 @@ export default function HomePage() {
                 <div>
                   <p className="text-sm tracking-[0.22em] uppercase text-slate-300">Next step</p>
                   <h2 className="mt-3 text-3xl md:text-4xl font-semibold tracking-tight">
-                    Turn this into your live portfolio
+                    Let's work together
                   </h2>
                   <p className="mt-4 max-w-2xl text-slate-300 leading-7">
-                    Add your resume PDF, optional blog posts, and a custom domain later if you want
-                    to strengthen your personal brand further.
+                    If you're hiring for data engineering roles focused on Snowflake, AWS, and
+                    production pipelines, I'd be glad to connect.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="https://github.com/beprathap"
+                    href="/resume.pdf"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 text-sm font-medium text-slate-900"
                   >
-                    <Github className="h-4 w-4" /> GitHub
+                    <FileText className="h-4 w-4" /> Resume
                   </a>
                   <a
-                    href="#contact"
+                    href="mailto:prathapboddu0121@gmail.com"
                     className="inline-flex items-center gap-2 rounded-2xl border border-white/20 px-5 py-3 text-sm font-medium text-white"
                   >
-                    <ExternalLink className="h-4 w-4" /> Contact
+                    <Mail className="h-4 w-4" /> Email
+                  </a>
+                  <a
+                    href="https://github.com/beprathap"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-2xl border border-white/20 px-5 py-3 text-sm font-medium text-white"
+                  >
+                    <ExternalLink className="h-4 w-4" /> Projects
                   </a>
                 </div>
               </div>
@@ -492,7 +512,7 @@ export default function HomePage() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-300 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50"
             >
-              <FileText className="h-4 w-4" /> Resume
+              <FileText className="h-4 w-4" /> Download Resume
             </a>
           </div>
         </div>
