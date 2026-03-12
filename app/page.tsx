@@ -171,18 +171,18 @@ export default function HomePage() {
               <div>
                 <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm">
                   <ShieldCheck className="h-4 w-4" />
-                  Building reliable data platforms for real business outcomes
+                  Senior/Lead Data Engineer with enterprise delivery experience
                 </div>
                 <h1 className="mt-6 text-5xl md:text-7xl font-semibold tracking-tight leading-[0.95]">
-                  Hi, I'm Prathap.
+                  Senior Data Engineer
                   <span className="block text-slate-500">
-                    I build scalable pipelines on Snowflake and AWS.
+                    building Snowflake and AWS platforms at scale.
                   </span>
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg md:text-xl leading-8 text-slate-600">
-                  I'm a data engineer with 4+ years of experience across healthcare and automotive
-                  platforms. I focus on secure ingestion, CDC pipelines, data quality, and
-                  performance tuning that helps teams trust their data.
+                  I lead high-impact data engineering work across healthcare and automotive
+                  platforms, from ingestion architecture to production operations. My focus is
+                  reliable pipelines, data quality, and measurable improvements in latency and cost.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
@@ -245,7 +245,7 @@ export default function HomePage() {
                   <div>
                     <p className="text-sm text-slate-500">Current focus</p>
                     <p className="font-semibold">
-                      High-throughput pipelines, governance, and cost-efficient modeling
+                      Platform-level architecture, pipeline reliability, and warehouse efficiency
                     </p>
                   </div>
                 </div>
@@ -265,7 +265,8 @@ export default function HomePage() {
                   <p className="text-sm text-slate-500">What I deliver</p>
                   <p className="mt-2 text-base leading-7 text-slate-700">
                     Production-ready data systems using Snowflake, AWS, Python, DBT, and PySpark
-                    with strong ownership of reliability, testing, and observability.
+                    with strong ownership of architecture decisions, delivery quality, and
+                    cross-team execution.
                   </p>
                 </div>
               </Card>
@@ -277,8 +278,8 @@ export default function HomePage() {
           <div className={sectionClass}>
             <SectionTitle
               eyebrow="About"
-              title="What I bring as a data engineer"
-              description="I work across ingestion, transformation, and consumption layers with an emphasis on scale, security, and maintainability."
+              title="Leadership with hands-on delivery"
+              description="I combine platform thinking with implementation depth to deliver data systems that scale and stay maintainable."
             />
             <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-6">
               <Card className="p-7">
@@ -289,14 +290,14 @@ export default function HomePage() {
                   <div>
                     <h3 className="text-xl font-semibold">Technical strengths</h3>
                     <p className="mt-3 text-slate-600 leading-7">
-                      My work is centered on enterprise-scale ingestion and transformation.
-                      I design data flows that are fast, auditable, and resilient across
-                      batch and near-real-time workloads.
+                      I work across architecture and execution, from secure ingestion to
+                      transformation frameworks and production observability. I optimize for
+                      systems that are resilient under real enterprise traffic.
                     </p>
                     <ul className="mt-5 space-y-3 text-slate-600">
-                      <li>• Snowflake + AWS platform engineering across multiple domains</li>
-                      <li>• Strong hands-on delivery in Python, SQL, PySpark, and DBT</li>
-                      <li>• Practical ownership of performance, cost, and reliability</li>
+                      <li>• End-to-end Snowflake and AWS platform ownership</li>
+                      <li>• Advanced Python/SQL/PySpark/DBT implementation experience</li>
+                      <li>• Strong focus on governance, reliability, and cost control</li>
                     </ul>
                   </div>
                 </div>
@@ -309,14 +310,14 @@ export default function HomePage() {
                   <div>
                     <h3 className="text-xl font-semibold">How I work</h3>
                     <p className="mt-3 text-slate-600 leading-7">
-                      I prefer clear requirements, measurable outcomes, and shipping in small,
-                      reliable increments. I care about code quality, data correctness, and
-                      documentation that helps teams move faster.
+                      I align teams on clear outcomes, define pragmatic technical plans,
+                      and drive execution with high engineering standards. I emphasize
+                      maintainability, documentation, and operational readiness.
                     </p>
                     <ul className="mt-5 space-y-3 text-slate-600">
-                      <li>• Translate business goals into practical data architecture</li>
-                      <li>• Build with testing, observability, and operational clarity</li>
-                      <li>• Partner closely with analytics, product, and platform teams</li>
+                      <li>• Break down roadmap goals into delivery-ready milestones</li>
+                      <li>• Build with tests, monitoring, and incident-aware operations</li>
+                      <li>• Partner effectively with product, analytics, and platform teams</li>
                     </ul>
                   </div>
                 </div>
@@ -329,8 +330,8 @@ export default function HomePage() {
           <div className={sectionClass}>
             <SectionTitle
               eyebrow="Experience"
-              title="Experience and outcomes"
-              description="Projects and responsibilities where I improved reliability, reduced latency, and supported critical production workloads."
+              title="Experience with measurable results"
+              description="Roles where I led complex delivery, improved SLA performance, and supported mission-critical workloads."
             />
             <div className="space-y-6">
               {experience.map((item, idx) => (
@@ -372,8 +373,8 @@ export default function HomePage() {
           <div className={sectionClass}>
             <SectionTitle
               eyebrow="Projects"
-              title="Selected projects"
-              description="Hands-on projects that reflect how I approach data engineering, analytics engineering, and applied machine learning."
+              title="Selected engineering work"
+              description="Projects that demonstrate practical design decisions, implementation depth, and production-oriented thinking."
             />
             <div className="grid md:grid-cols-2 gap-6">
               {projects.map((project, idx) => (
@@ -438,11 +439,11 @@ export default function HomePage() {
                 <div>
                   <p className="text-sm tracking-[0.22em] uppercase text-slate-300">Next step</p>
                   <h2 className="mt-3 text-3xl md:text-4xl font-semibold tracking-tight">
-                    Let's work together
+                    Open to Senior / Lead Data Engineer roles
                   </h2>
                   <p className="mt-4 max-w-2xl text-slate-300 leading-7">
-                    If you're hiring for data engineering roles focused on Snowflake, AWS, and
-                    production pipelines, I'd be glad to connect.
+                    If you are hiring for ownership-heavy data engineering roles focused on
+                    Snowflake, AWS, and production pipelines, I would be glad to connect.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3">
